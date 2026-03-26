@@ -268,7 +268,7 @@ final class CurlHttpClient
         }
 
         try {
-            return json_decode($rawBody, true, 512, JSON_THROW_ON_ERROR);
+            return json_decode($rawBody, false, 512, JSON_THROW_ON_ERROR);
         } catch (\JsonException $exception) {
             throw new SerializationException('Failed to decode JSON response: ' . $exception->getMessage(), 0, $exception);
         }
