@@ -91,7 +91,7 @@ final class OpportunitiesModule extends AbstractModule
     public function searchOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('searchOpportunity', $pathParams, $query, $body, $headers);
@@ -111,7 +111,7 @@ final class OpportunitiesModule extends AbstractModule
     public function getPipelines(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getPipelines', $pathParams, $query, $body, $headers);
@@ -131,7 +131,7 @@ final class OpportunitiesModule extends AbstractModule
     public function getOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getOpportunity', $pathParams, $query, $body, $headers);
@@ -151,7 +151,7 @@ final class OpportunitiesModule extends AbstractModule
     public function deleteOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteOpportunity', $pathParams, $query, $body, $headers);
@@ -171,7 +171,7 @@ final class OpportunitiesModule extends AbstractModule
     public function updateOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateOpportunity', $pathParams, $query, $body, $headers);
@@ -191,7 +191,7 @@ final class OpportunitiesModule extends AbstractModule
     public function updateOpportunityStatus(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateOpportunityStatus', $pathParams, $query, $body, $headers);
@@ -211,7 +211,7 @@ final class OpportunitiesModule extends AbstractModule
     public function upsertOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('upsertOpportunity', $pathParams, $query, $body, $headers);
@@ -231,7 +231,7 @@ final class OpportunitiesModule extends AbstractModule
     public function addFollowersOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addFollowersOpportunity', $pathParams, $query, $body, $headers);
@@ -251,7 +251,7 @@ final class OpportunitiesModule extends AbstractModule
     public function removeFollowersOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('removeFollowersOpportunity', $pathParams, $query, $body, $headers);
@@ -271,7 +271,7 @@ final class OpportunitiesModule extends AbstractModule
     public function createOpportunity(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createOpportunity', $pathParams, $query, $body, $headers);

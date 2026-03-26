@@ -37,7 +37,7 @@ final class CoursesModule extends AbstractModule
     public function importCourses(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('importCourses', $pathParams, $query, $body, $headers);

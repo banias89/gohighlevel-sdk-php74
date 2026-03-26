@@ -37,7 +37,7 @@ final class WorkflowsModule extends AbstractModule
     public function getWorkflow(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getWorkflow', $pathParams, $query, $body, $headers);

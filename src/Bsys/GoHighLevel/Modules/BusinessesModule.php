@@ -61,7 +61,7 @@ final class BusinessesModule extends AbstractModule
     public function updateBusiness(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateBusiness', $pathParams, $query, $body, $headers);
@@ -81,7 +81,7 @@ final class BusinessesModule extends AbstractModule
     public function deleteBusiness(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteBusiness', $pathParams, $query, $body, $headers);
@@ -101,7 +101,7 @@ final class BusinessesModule extends AbstractModule
     public function getBusiness(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getBusiness', $pathParams, $query, $body, $headers);
@@ -121,7 +121,7 @@ final class BusinessesModule extends AbstractModule
     public function getBusinessesByLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getBusinessesByLocation', $pathParams, $query, $body, $headers);
@@ -141,7 +141,7 @@ final class BusinessesModule extends AbstractModule
     public function createBusiness(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createBusiness', $pathParams, $query, $body, $headers);

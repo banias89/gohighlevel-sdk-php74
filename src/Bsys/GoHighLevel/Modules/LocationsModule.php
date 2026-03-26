@@ -205,7 +205,7 @@ final class LocationsModule extends AbstractModule
     public function searchLocations(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('searchLocations', $pathParams, $query, $body, $headers);
@@ -225,7 +225,7 @@ final class LocationsModule extends AbstractModule
     public function getLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLocation', $pathParams, $query, $body, $headers);
@@ -245,7 +245,7 @@ final class LocationsModule extends AbstractModule
     public function putLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('putLocation', $pathParams, $query, $body, $headers);
@@ -265,7 +265,7 @@ final class LocationsModule extends AbstractModule
     public function deleteLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteLocation', $pathParams, $query, $body, $headers);
@@ -285,7 +285,7 @@ final class LocationsModule extends AbstractModule
     public function getLocationTags(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLocationTags', $pathParams, $query, $body, $headers);
@@ -305,7 +305,7 @@ final class LocationsModule extends AbstractModule
     public function createTag(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createTag', $pathParams, $query, $body, $headers);
@@ -325,7 +325,7 @@ final class LocationsModule extends AbstractModule
     public function getTagById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTagById', $pathParams, $query, $body, $headers);
@@ -345,7 +345,7 @@ final class LocationsModule extends AbstractModule
     public function updateTag(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateTag', $pathParams, $query, $body, $headers);
@@ -365,7 +365,7 @@ final class LocationsModule extends AbstractModule
     public function deleteTag(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteTag', $pathParams, $query, $body, $headers);
@@ -385,7 +385,7 @@ final class LocationsModule extends AbstractModule
     public function taskSearch(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('taskSearch', $pathParams, $query, $body, $headers);
@@ -405,7 +405,7 @@ final class LocationsModule extends AbstractModule
     public function getRecurringTaskById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getRecurringTaskById', $pathParams, $query, $body, $headers);
@@ -425,7 +425,7 @@ final class LocationsModule extends AbstractModule
     public function updateRecurringTask(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateRecurringTask', $pathParams, $query, $body, $headers);
@@ -445,7 +445,7 @@ final class LocationsModule extends AbstractModule
     public function deleteRecurringTask(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteRecurringTask', $pathParams, $query, $body, $headers);
@@ -465,7 +465,7 @@ final class LocationsModule extends AbstractModule
     public function createRecurringTask(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createRecurringTask', $pathParams, $query, $body, $headers);
@@ -485,7 +485,7 @@ final class LocationsModule extends AbstractModule
     public function getCustomFields(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomFields', $pathParams, $query, $body, $headers);
@@ -505,7 +505,7 @@ final class LocationsModule extends AbstractModule
     public function createCustomField(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCustomField', $pathParams, $query, $body, $headers);
@@ -525,7 +525,7 @@ final class LocationsModule extends AbstractModule
     public function getCustomField(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomField', $pathParams, $query, $body, $headers);
@@ -545,7 +545,7 @@ final class LocationsModule extends AbstractModule
     public function updateCustomField(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCustomField', $pathParams, $query, $body, $headers);
@@ -565,7 +565,7 @@ final class LocationsModule extends AbstractModule
     public function deleteCustomField(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCustomField', $pathParams, $query, $body, $headers);
@@ -585,7 +585,7 @@ final class LocationsModule extends AbstractModule
     public function uploadFileCustomfields(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('uploadFileCustomfields', $pathParams, $query, $body, $headers);
@@ -605,7 +605,7 @@ final class LocationsModule extends AbstractModule
     public function getCustomValues(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomValues', $pathParams, $query, $body, $headers);
@@ -625,7 +625,7 @@ final class LocationsModule extends AbstractModule
     public function createCustomValue(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCustomValue', $pathParams, $query, $body, $headers);
@@ -645,7 +645,7 @@ final class LocationsModule extends AbstractModule
     public function getCustomValue(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomValue', $pathParams, $query, $body, $headers);
@@ -665,7 +665,7 @@ final class LocationsModule extends AbstractModule
     public function updateCustomValue(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCustomValue', $pathParams, $query, $body, $headers);
@@ -685,7 +685,7 @@ final class LocationsModule extends AbstractModule
     public function deleteCustomValue(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCustomValue', $pathParams, $query, $body, $headers);
@@ -705,7 +705,7 @@ final class LocationsModule extends AbstractModule
     public function getTimezones(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTimezones', $pathParams, $query, $body, $headers);
@@ -725,7 +725,7 @@ final class LocationsModule extends AbstractModule
     public function getAllOrEmailSmsTemplates(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAllOrEmailSmsTemplates', $pathParams, $query, $body, $headers);
@@ -745,7 +745,7 @@ final class LocationsModule extends AbstractModule
     public function deleteAnEmailSmsTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteAnEmailSmsTemplate', $pathParams, $query, $body, $headers);
@@ -765,7 +765,7 @@ final class LocationsModule extends AbstractModule
     public function createLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createLocation', $pathParams, $query, $body, $headers);

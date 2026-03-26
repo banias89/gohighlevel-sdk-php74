@@ -73,7 +73,7 @@ final class MediasModule extends AbstractModule
     public function fetchMediaContent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('fetchMediaContent', $pathParams, $query, $body, $headers);
@@ -93,7 +93,7 @@ final class MediasModule extends AbstractModule
     public function uploadMediaContent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('uploadMediaContent', $pathParams, $query, $body, $headers);
@@ -113,7 +113,7 @@ final class MediasModule extends AbstractModule
     public function deleteMediaContent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteMediaContent', $pathParams, $query, $body, $headers);
@@ -133,7 +133,7 @@ final class MediasModule extends AbstractModule
     public function updateMediaObject(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateMediaObject', $pathParams, $query, $body, $headers);
@@ -153,7 +153,7 @@ final class MediasModule extends AbstractModule
     public function createMediaFolder(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createMediaFolder', $pathParams, $query, $body, $headers);
@@ -173,7 +173,7 @@ final class MediasModule extends AbstractModule
     public function bulkUpdateMediaObjects(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkUpdateMediaObjects', $pathParams, $query, $body, $headers);
@@ -193,7 +193,7 @@ final class MediasModule extends AbstractModule
     public function bulkDeleteMediaObjects(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkDeleteMediaObjects', $pathParams, $query, $body, $headers);

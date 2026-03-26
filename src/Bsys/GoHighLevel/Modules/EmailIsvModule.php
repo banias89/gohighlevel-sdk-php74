@@ -37,7 +37,7 @@ final class EmailIsvModule extends AbstractModule
     public function verifyEmail(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('verifyEmail', $pathParams, $query, $body, $headers);

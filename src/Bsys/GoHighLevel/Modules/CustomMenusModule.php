@@ -61,7 +61,7 @@ final class CustomMenusModule extends AbstractModule
     public function getCustomMenuById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomMenuById', $pathParams, $query, $body, $headers);
@@ -81,7 +81,7 @@ final class CustomMenusModule extends AbstractModule
     public function deleteCustomMenu(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCustomMenu', $pathParams, $query, $body, $headers);
@@ -101,7 +101,7 @@ final class CustomMenusModule extends AbstractModule
     public function updateCustomMenu(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCustomMenu', $pathParams, $query, $body, $headers);
@@ -121,7 +121,7 @@ final class CustomMenusModule extends AbstractModule
     public function getCustomMenus(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomMenus', $pathParams, $query, $body, $headers);
@@ -141,7 +141,7 @@ final class CustomMenusModule extends AbstractModule
     public function createCustomMenu(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCustomMenu', $pathParams, $query, $body, $headers);

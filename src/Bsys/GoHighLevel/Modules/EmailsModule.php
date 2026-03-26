@@ -61,7 +61,7 @@ final class EmailsModule extends AbstractModule
     public function fetchCampaigns(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('fetchCampaigns', $pathParams, $query, $body, $headers);
@@ -81,7 +81,7 @@ final class EmailsModule extends AbstractModule
     public function createTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createTemplate', $pathParams, $query, $body, $headers);
@@ -101,7 +101,7 @@ final class EmailsModule extends AbstractModule
     public function fetchTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('fetchTemplate', $pathParams, $query, $body, $headers);
@@ -121,7 +121,7 @@ final class EmailsModule extends AbstractModule
     public function deleteTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteTemplate', $pathParams, $query, $body, $headers);
@@ -141,7 +141,7 @@ final class EmailsModule extends AbstractModule
     public function updateTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateTemplate', $pathParams, $query, $body, $headers);

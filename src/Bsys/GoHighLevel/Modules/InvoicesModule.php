@@ -277,7 +277,7 @@ final class InvoicesModule extends AbstractModule
     public function createInvoiceTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createInvoiceTemplate', $pathParams, $query, $body, $headers);
@@ -297,7 +297,7 @@ final class InvoicesModule extends AbstractModule
     public function listInvoiceTemplates(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listInvoiceTemplates', $pathParams, $query, $body, $headers);
@@ -317,7 +317,7 @@ final class InvoicesModule extends AbstractModule
     public function getInvoiceTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getInvoiceTemplate', $pathParams, $query, $body, $headers);
@@ -337,7 +337,7 @@ final class InvoicesModule extends AbstractModule
     public function updateInvoiceTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInvoiceTemplate', $pathParams, $query, $body, $headers);
@@ -357,7 +357,7 @@ final class InvoicesModule extends AbstractModule
     public function deleteInvoiceTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteInvoiceTemplate', $pathParams, $query, $body, $headers);
@@ -377,7 +377,7 @@ final class InvoicesModule extends AbstractModule
     public function updateInvoiceTemplateLateFeesConfiguration(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInvoiceTemplateLateFeesConfiguration', $pathParams, $query, $body, $headers);
@@ -397,7 +397,7 @@ final class InvoicesModule extends AbstractModule
     public function updateInvoicePaymentMethodsConfiguration(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInvoicePaymentMethodsConfiguration', $pathParams, $query, $body, $headers);
@@ -417,7 +417,7 @@ final class InvoicesModule extends AbstractModule
     public function createInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -437,7 +437,7 @@ final class InvoicesModule extends AbstractModule
     public function listInvoiceSchedules(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listInvoiceSchedules', $pathParams, $query, $body, $headers);
@@ -457,7 +457,7 @@ final class InvoicesModule extends AbstractModule
     public function getInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -477,7 +477,7 @@ final class InvoicesModule extends AbstractModule
     public function updateInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -497,7 +497,7 @@ final class InvoicesModule extends AbstractModule
     public function deleteInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -517,7 +517,7 @@ final class InvoicesModule extends AbstractModule
     public function updateAndScheduleInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateAndScheduleInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -537,7 +537,7 @@ final class InvoicesModule extends AbstractModule
     public function scheduleInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('scheduleInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -557,7 +557,7 @@ final class InvoicesModule extends AbstractModule
     public function autoPaymentInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('autoPaymentInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -577,7 +577,7 @@ final class InvoicesModule extends AbstractModule
     public function cancelInvoiceSchedule(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('cancelInvoiceSchedule', $pathParams, $query, $body, $headers);
@@ -597,7 +597,7 @@ final class InvoicesModule extends AbstractModule
     public function text2payInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('text2payInvoice', $pathParams, $query, $body, $headers);
@@ -617,7 +617,7 @@ final class InvoicesModule extends AbstractModule
     public function generateInvoiceNumber(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('generateInvoiceNumber', $pathParams, $query, $body, $headers);
@@ -637,7 +637,7 @@ final class InvoicesModule extends AbstractModule
     public function getInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getInvoice', $pathParams, $query, $body, $headers);
@@ -657,7 +657,7 @@ final class InvoicesModule extends AbstractModule
     public function updateInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInvoice', $pathParams, $query, $body, $headers);
@@ -677,7 +677,7 @@ final class InvoicesModule extends AbstractModule
     public function deleteInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteInvoice', $pathParams, $query, $body, $headers);
@@ -697,7 +697,7 @@ final class InvoicesModule extends AbstractModule
     public function updateInvoiceLateFeesConfiguration(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInvoiceLateFeesConfiguration', $pathParams, $query, $body, $headers);
@@ -717,7 +717,7 @@ final class InvoicesModule extends AbstractModule
     public function voidInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('voidInvoice', $pathParams, $query, $body, $headers);
@@ -737,7 +737,7 @@ final class InvoicesModule extends AbstractModule
     public function sendInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('sendInvoice', $pathParams, $query, $body, $headers);
@@ -757,7 +757,7 @@ final class InvoicesModule extends AbstractModule
     public function recordInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('recordInvoice', $pathParams, $query, $body, $headers);
@@ -777,7 +777,7 @@ final class InvoicesModule extends AbstractModule
     public function updateInvoiceLastVisitedAt(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInvoiceLastVisitedAt', $pathParams, $query, $body, $headers);
@@ -797,7 +797,7 @@ final class InvoicesModule extends AbstractModule
     public function createNewEstimate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createNewEstimate', $pathParams, $query, $body, $headers);
@@ -817,7 +817,7 @@ final class InvoicesModule extends AbstractModule
     public function updateEstimate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateEstimate', $pathParams, $query, $body, $headers);
@@ -837,7 +837,7 @@ final class InvoicesModule extends AbstractModule
     public function deleteEstimate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteEstimate', $pathParams, $query, $body, $headers);
@@ -857,7 +857,7 @@ final class InvoicesModule extends AbstractModule
     public function generateEstimateNumber(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('generateEstimateNumber', $pathParams, $query, $body, $headers);
@@ -877,7 +877,7 @@ final class InvoicesModule extends AbstractModule
     public function sendEstimate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('sendEstimate', $pathParams, $query, $body, $headers);
@@ -897,7 +897,7 @@ final class InvoicesModule extends AbstractModule
     public function createInvoiceFromEstimate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createInvoiceFromEstimate', $pathParams, $query, $body, $headers);
@@ -917,7 +917,7 @@ final class InvoicesModule extends AbstractModule
     public function listEstimates(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listEstimates', $pathParams, $query, $body, $headers);
@@ -937,7 +937,7 @@ final class InvoicesModule extends AbstractModule
     public function updateEstimateLastVisitedAt(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateEstimateLastVisitedAt', $pathParams, $query, $body, $headers);
@@ -957,7 +957,7 @@ final class InvoicesModule extends AbstractModule
     public function listEstimateTemplates(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listEstimateTemplates', $pathParams, $query, $body, $headers);
@@ -977,7 +977,7 @@ final class InvoicesModule extends AbstractModule
     public function createEstimateTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createEstimateTemplate', $pathParams, $query, $body, $headers);
@@ -997,7 +997,7 @@ final class InvoicesModule extends AbstractModule
     public function updateEstimateTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateEstimateTemplate', $pathParams, $query, $body, $headers);
@@ -1017,7 +1017,7 @@ final class InvoicesModule extends AbstractModule
     public function deleteEstimateTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteEstimateTemplate', $pathParams, $query, $body, $headers);
@@ -1037,7 +1037,7 @@ final class InvoicesModule extends AbstractModule
     public function previewEstimateTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('previewEstimateTemplate', $pathParams, $query, $body, $headers);
@@ -1057,7 +1057,7 @@ final class InvoicesModule extends AbstractModule
     public function createInvoice(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createInvoice', $pathParams, $query, $body, $headers);
@@ -1077,7 +1077,7 @@ final class InvoicesModule extends AbstractModule
     public function listInvoices(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listInvoices', $pathParams, $query, $body, $headers);

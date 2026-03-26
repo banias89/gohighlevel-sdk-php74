@@ -11,16 +11,40 @@ use CURLFile;
 
 final class CurlHttpClient
 {
+    private string $accessToken;
+
+    private string $baseUrl;
+
+    private ?string $version;
+
+    private int $timeoutSeconds;
+
+    private int $connectTimeoutSeconds;
+
+    private string $userAgent;
+
+    private string $authHeaderName;
+
+    private ?string $authScheme;
+
     public function __construct(
-        private readonly string $accessToken,
-        private readonly string $baseUrl = 'https://services.leadconnectorhq.com',
-        private readonly ?string $version = '2021-07-28',
-        private readonly int $timeoutSeconds = 30,
-        private readonly int $connectTimeoutSeconds = 10,
-        private readonly string $userAgent = 'Bsys-GoHighLevel-SDK/1.0.0',
-        private readonly string $authHeaderName = 'Authorization',
-        private readonly ?string $authScheme = 'Bearer'
+        string $accessToken,
+        string $baseUrl = 'https://services.leadconnectorhq.com',
+        ?string $version = '2021-07-28',
+        int $timeoutSeconds = 30,
+        int $connectTimeoutSeconds = 10,
+        string $userAgent = 'Bsys-GoHighLevel-SDK/1.0.0',
+        string $authHeaderName = 'Authorization',
+        ?string $authScheme = 'Bearer'
     ) {
+        $this->accessToken = $accessToken;
+        $this->baseUrl = $baseUrl;
+        $this->version = $version;
+        $this->timeoutSeconds = $timeoutSeconds;
+        $this->connectTimeoutSeconds = $connectTimeoutSeconds;
+        $this->userAgent = $userAgent;
+        $this->authHeaderName = $authHeaderName;
+        $this->authScheme = $authScheme;
     }
 
     /**
@@ -32,7 +56,7 @@ final class CurlHttpClient
         string $method,
         string $path,
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         $method = strtoupper($method);
@@ -92,7 +116,7 @@ final class CurlHttpClient
      */
     private function buildUrl(string $path, array $query): string
     {
-        $normalizedPath = str_starts_with($path, '/') ? $path : '/' . $path;
+        $normalizedPath = $this->startsWithString($path, '/') ? $path : '/' . $path;
         $url = rtrim($this->baseUrl, '/') . $normalizedPath;
 
         if ($query !== []) {
@@ -110,7 +134,7 @@ final class CurlHttpClient
      * @param array<string, mixed>|string|null $body
      * @return array<string, string>
      */
-    private function buildHeaderBag(array $headers, array|string|null $body): array
+    private function buildHeaderBag(array $headers, $body): array
     {
         $authHeaderKey = strtolower($this->authHeaderName);
 
@@ -160,7 +184,7 @@ final class CurlHttpClient
      * @param array<string, string> $headerBag
      * @return array<string, mixed>|string
      */
-    private function preparePayload(array|string $body, array $headerBag): array|string
+    private function preparePayload($body, array $headerBag)
     {
         if (is_string($body)) {
             return $body;
@@ -181,9 +205,9 @@ final class CurlHttpClient
      * @param array<string, mixed>|string|null $body
      * @param array<string, string> $headerBag
      */
-    private function isMultipartPayload(array|string|null $body, array $headerBag): bool
+    private function isMultipartPayload($body, array $headerBag): bool
     {
-        if (isset($headerBag['content-type']) && str_contains(strtolower($headerBag['content-type']), 'multipart/form-data')) {
+        if (isset($headerBag['content-type']) && $this->containsString(strtolower($headerBag['content-type']), 'multipart/form-data')) {
             return true;
         }
 
@@ -215,7 +239,7 @@ final class CurlHttpClient
         $headers = [];
 
         foreach ($headerLines as $line) {
-            if (!str_contains($line, ':')) {
+            if (!$this->containsString($line, ':')) {
                 continue;
             }
 
@@ -229,16 +253,17 @@ final class CurlHttpClient
     /**
      * @param array<string, string> $headers
      */
-    private function decodeBody(string $rawBody, array $headers): mixed
+    private function decodeBody(string $rawBody, array $headers)
     {
         if ($rawBody === '') {
             return null;
         }
 
         $contentType = strtolower($headers['content-type'] ?? '');
-        $looksLikeJson = str_starts_with(trim($rawBody), '{') || str_starts_with(trim($rawBody), '[');
+        $trimmedBody = trim($rawBody);
+        $looksLikeJson = $this->startsWithString($trimmedBody, '{') || $this->startsWithString($trimmedBody, '[');
 
-        if (!str_contains($contentType, 'application/json') && !$looksLikeJson) {
+        if (!$this->containsString($contentType, 'application/json') && !$looksLikeJson) {
             return $rawBody;
         }
 
@@ -253,7 +278,7 @@ final class CurlHttpClient
     {
         $trimmed = trim($token);
 
-        return str_starts_with(strtolower($trimmed), 'bearer ')
+        return $this->startsWithString(strtolower($trimmed), 'bearer ')
             ? trim(substr($trimmed, 7))
             : $trimmed;
     }
@@ -266,5 +291,15 @@ final class CurlHttpClient
         }
 
         return trim($this->authScheme) . ' ' . $normalizedToken;
+    }
+
+    private function startsWithString(string $haystack, string $needle): bool
+    {
+        return strncmp($haystack, $needle, strlen($needle)) === 0;
+    }
+
+    private function containsString(string $haystack, string $needle): bool
+    {
+        return strpos($haystack, $needle) !== false;
     }
 }
