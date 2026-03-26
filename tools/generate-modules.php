@@ -160,7 +160,7 @@ function buildModuleClassPhp(string $className, array $definitions): string
         $methodBlocks[] = "    public function {$methodName}(";
         $methodBlocks[] = "        array \$pathParams = [],";
         $methodBlocks[] = "        array \$query = [],";
-        $methodBlocks[] = "        array|string|null \$body = null,";
+        $methodBlocks[] = "        \$body = null,";
         $methodBlocks[] = "        array \$headers = []";
         $methodBlocks[] = "    ): HttpResponse {";
         $methodBlocks[] = "        return \$this->sendByKey('" . escapeSingle($methodName) . "', \$pathParams, \$query, \$body, \$headers);";
@@ -243,9 +243,11 @@ final class GhlClient
      */
     private array \$moduleCache = [];
 
-    public function __construct(
-        private readonly CurlHttpClient \$httpClient
-    ) {
+    private CurlHttpClient \$httpClient;
+
+    public function __construct(CurlHttpClient \$httpClient)
+    {
+        \$this->httpClient = \$httpClient;
     }
 
     public static function withAccessToken(
@@ -254,15 +256,19 @@ final class GhlClient
         ?string \$version = '2021-07-28',
         int \$timeoutSeconds = 30,
         int \$connectTimeoutSeconds = 10,
-        string \$userAgent = 'Bsys-GoHighLevel-SDK/1.0.0'
+        string \$userAgent = 'Bsys-GoHighLevel-SDK/1.0.0',
+        string \$authHeaderName = 'Authorization',
+        ?string \$authScheme = 'Bearer'
     ): self {
         return new self(new CurlHttpClient(
-            accessToken: \$accessToken,
-            baseUrl: \$baseUrl,
-            version: \$version,
-            timeoutSeconds: \$timeoutSeconds,
-            connectTimeoutSeconds: \$connectTimeoutSeconds,
-            userAgent: \$userAgent
+            \$accessToken,
+            \$baseUrl,
+            \$version,
+            \$timeoutSeconds,
+            \$connectTimeoutSeconds,
+            \$userAgent,
+            \$authHeaderName,
+            \$authScheme
         ));
     }
 
@@ -282,7 +288,7 @@ final class GhlClient
         string \$method,
         string \$path,
         array \$query = [],
-        array|string|null \$body = null,
+        \$body = null,
         array \$headers = []
     ): HttpResponse {
         return \$this->httpClient->request(\$method, \$path, \$query, \$body, \$headers);

@@ -145,7 +145,7 @@ final class ConversationsModule extends AbstractModule
     public function searchConversation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('searchConversation', $pathParams, $query, $body, $headers);
@@ -165,7 +165,7 @@ final class ConversationsModule extends AbstractModule
     public function getConversation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getConversation', $pathParams, $query, $body, $headers);
@@ -185,7 +185,7 @@ final class ConversationsModule extends AbstractModule
     public function updateConversation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateConversation', $pathParams, $query, $body, $headers);
@@ -205,7 +205,7 @@ final class ConversationsModule extends AbstractModule
     public function deleteConversation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteConversation', $pathParams, $query, $body, $headers);
@@ -225,7 +225,7 @@ final class ConversationsModule extends AbstractModule
     public function getEmailById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getEmailById', $pathParams, $query, $body, $headers);
@@ -245,7 +245,7 @@ final class ConversationsModule extends AbstractModule
     public function cancelScheduledEmailMessage(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('cancelScheduledEmailMessage', $pathParams, $query, $body, $headers);
@@ -265,7 +265,7 @@ final class ConversationsModule extends AbstractModule
     public function getMessage(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getMessage', $pathParams, $query, $body, $headers);
@@ -285,7 +285,7 @@ final class ConversationsModule extends AbstractModule
     public function getMessages(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getMessages', $pathParams, $query, $body, $headers);
@@ -305,7 +305,7 @@ final class ConversationsModule extends AbstractModule
     public function sendANewMessage(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('sendANewMessage', $pathParams, $query, $body, $headers);
@@ -325,7 +325,7 @@ final class ConversationsModule extends AbstractModule
     public function addAnInboundMessage(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addAnInboundMessage', $pathParams, $query, $body, $headers);
@@ -345,7 +345,7 @@ final class ConversationsModule extends AbstractModule
     public function addAnOutboundMessage(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addAnOutboundMessage', $pathParams, $query, $body, $headers);
@@ -365,7 +365,7 @@ final class ConversationsModule extends AbstractModule
     public function cancelScheduledMessage(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('cancelScheduledMessage', $pathParams, $query, $body, $headers);
@@ -385,7 +385,7 @@ final class ConversationsModule extends AbstractModule
     public function uploadFileAttachments(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('uploadFileAttachments', $pathParams, $query, $body, $headers);
@@ -405,7 +405,7 @@ final class ConversationsModule extends AbstractModule
     public function updateMessageStatus(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateMessageStatus', $pathParams, $query, $body, $headers);
@@ -425,7 +425,7 @@ final class ConversationsModule extends AbstractModule
     public function getMessageRecording(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getMessageRecording', $pathParams, $query, $body, $headers);
@@ -445,7 +445,7 @@ final class ConversationsModule extends AbstractModule
     public function getMessageTranscription(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getMessageTranscription', $pathParams, $query, $body, $headers);
@@ -465,7 +465,7 @@ final class ConversationsModule extends AbstractModule
     public function downloadMessageTranscription(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('downloadMessageTranscription', $pathParams, $query, $body, $headers);
@@ -485,7 +485,7 @@ final class ConversationsModule extends AbstractModule
     public function liveChatAgentTyping(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('liveChatAgentTyping', $pathParams, $query, $body, $headers);
@@ -505,7 +505,7 @@ final class ConversationsModule extends AbstractModule
     public function createConversation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createConversation', $pathParams, $query, $body, $headers);

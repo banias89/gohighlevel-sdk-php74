@@ -49,7 +49,7 @@ final class FormsModule extends AbstractModule
     public function getFormsSubmissions(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getFormsSubmissions', $pathParams, $query, $body, $headers);
@@ -69,7 +69,7 @@ final class FormsModule extends AbstractModule
     public function uploadToCustomFields(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('uploadToCustomFields', $pathParams, $query, $body, $headers);
@@ -89,7 +89,7 @@ final class FormsModule extends AbstractModule
     public function getForms(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getForms', $pathParams, $query, $body, $headers);

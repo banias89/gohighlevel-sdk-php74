@@ -163,7 +163,7 @@ final class SaasApiModule extends AbstractModule
     public function locationsDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('locationsDeprecated', $pathParams, $query, $body, $headers);
@@ -183,7 +183,7 @@ final class SaasApiModule extends AbstractModule
     public function updateSaasSubscriptionDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateSaasSubscriptionDeprecated', $pathParams, $query, $body, $headers);
@@ -203,7 +203,7 @@ final class SaasApiModule extends AbstractModule
     public function bulkDisableSaasDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkDisableSaasDeprecated', $pathParams, $query, $body, $headers);
@@ -223,7 +223,7 @@ final class SaasApiModule extends AbstractModule
     public function enableSaasLocationDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('enableSaasLocationDeprecated', $pathParams, $query, $body, $headers);
@@ -243,7 +243,7 @@ final class SaasApiModule extends AbstractModule
     public function pauseLocationDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('pauseLocationDeprecated', $pathParams, $query, $body, $headers);
@@ -263,7 +263,7 @@ final class SaasApiModule extends AbstractModule
     public function updateRebillingDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateRebillingDeprecated', $pathParams, $query, $body, $headers);
@@ -283,7 +283,7 @@ final class SaasApiModule extends AbstractModule
     public function getAgencyPlansDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAgencyPlansDeprecated', $pathParams, $query, $body, $headers);
@@ -303,7 +303,7 @@ final class SaasApiModule extends AbstractModule
     public function getLocationSubscriptionDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLocationSubscriptionDeprecated', $pathParams, $query, $body, $headers);
@@ -323,7 +323,7 @@ final class SaasApiModule extends AbstractModule
     public function bulkEnableSaasDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkEnableSaasDeprecated', $pathParams, $query, $body, $headers);
@@ -343,7 +343,7 @@ final class SaasApiModule extends AbstractModule
     public function getSaasLocationsDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSaasLocationsDeprecated', $pathParams, $query, $body, $headers);
@@ -363,7 +363,7 @@ final class SaasApiModule extends AbstractModule
     public function getSaasPlanDeprecated(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSaasPlanDeprecated', $pathParams, $query, $body, $headers);
@@ -383,7 +383,7 @@ final class SaasApiModule extends AbstractModule
     public function locations(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('locations', $pathParams, $query, $body, $headers);
@@ -403,7 +403,7 @@ final class SaasApiModule extends AbstractModule
     public function generatePaymentLink(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('generatePaymentLink', $pathParams, $query, $body, $headers);
@@ -423,7 +423,7 @@ final class SaasApiModule extends AbstractModule
     public function bulkDisableSaas(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkDisableSaas', $pathParams, $query, $body, $headers);
@@ -443,7 +443,7 @@ final class SaasApiModule extends AbstractModule
     public function enableSaasLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('enableSaasLocation', $pathParams, $query, $body, $headers);
@@ -463,7 +463,7 @@ final class SaasApiModule extends AbstractModule
     public function pauseLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('pauseLocation', $pathParams, $query, $body, $headers);
@@ -483,7 +483,7 @@ final class SaasApiModule extends AbstractModule
     public function updateRebilling(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateRebilling', $pathParams, $query, $body, $headers);
@@ -503,7 +503,7 @@ final class SaasApiModule extends AbstractModule
     public function getAgencyPlans(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAgencyPlans', $pathParams, $query, $body, $headers);
@@ -523,7 +523,7 @@ final class SaasApiModule extends AbstractModule
     public function getLocationSubscription(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLocationSubscription', $pathParams, $query, $body, $headers);
@@ -543,7 +543,7 @@ final class SaasApiModule extends AbstractModule
     public function bulkEnableSaas(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkEnableSaas', $pathParams, $query, $body, $headers);
@@ -563,7 +563,7 @@ final class SaasApiModule extends AbstractModule
     public function getSaasLocations(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSaasLocations', $pathParams, $query, $body, $headers);
@@ -583,7 +583,7 @@ final class SaasApiModule extends AbstractModule
     public function getSaasPlan(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSaasPlan', $pathParams, $query, $body, $headers);

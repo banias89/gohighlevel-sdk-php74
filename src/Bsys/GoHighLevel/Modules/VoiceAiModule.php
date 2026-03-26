@@ -97,7 +97,7 @@ final class VoiceAiModule extends AbstractModule
     public function createAgent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createAgent', $pathParams, $query, $body, $headers);
@@ -117,7 +117,7 @@ final class VoiceAiModule extends AbstractModule
     public function getAgents(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAgents', $pathParams, $query, $body, $headers);
@@ -137,7 +137,7 @@ final class VoiceAiModule extends AbstractModule
     public function patchAgent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('patchAgent', $pathParams, $query, $body, $headers);
@@ -157,7 +157,7 @@ final class VoiceAiModule extends AbstractModule
     public function getAgent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAgent', $pathParams, $query, $body, $headers);
@@ -177,7 +177,7 @@ final class VoiceAiModule extends AbstractModule
     public function deleteAgent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteAgent', $pathParams, $query, $body, $headers);
@@ -197,7 +197,7 @@ final class VoiceAiModule extends AbstractModule
     public function getCallLogs(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCallLogs', $pathParams, $query, $body, $headers);
@@ -217,7 +217,7 @@ final class VoiceAiModule extends AbstractModule
     public function getcalllog(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getcalllog', $pathParams, $query, $body, $headers);
@@ -237,7 +237,7 @@ final class VoiceAiModule extends AbstractModule
     public function createAction(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createAction', $pathParams, $query, $body, $headers);
@@ -257,7 +257,7 @@ final class VoiceAiModule extends AbstractModule
     public function updateAction(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateAction', $pathParams, $query, $body, $headers);
@@ -277,7 +277,7 @@ final class VoiceAiModule extends AbstractModule
     public function getAction(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAction', $pathParams, $query, $body, $headers);
@@ -297,7 +297,7 @@ final class VoiceAiModule extends AbstractModule
     public function deleteAction(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteAction', $pathParams, $query, $body, $headers);

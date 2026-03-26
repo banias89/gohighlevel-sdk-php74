@@ -73,7 +73,7 @@ final class UsersModule extends AbstractModule
     public function searchUsers(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('searchUsers', $pathParams, $query, $body, $headers);
@@ -93,7 +93,7 @@ final class UsersModule extends AbstractModule
     public function filterUsersByEmail(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('filterUsersByEmail', $pathParams, $query, $body, $headers);
@@ -113,7 +113,7 @@ final class UsersModule extends AbstractModule
     public function getUser(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getUser', $pathParams, $query, $body, $headers);
@@ -133,7 +133,7 @@ final class UsersModule extends AbstractModule
     public function updateUser(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateUser', $pathParams, $query, $body, $headers);
@@ -153,7 +153,7 @@ final class UsersModule extends AbstractModule
     public function deleteUser(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteUser', $pathParams, $query, $body, $headers);
@@ -173,7 +173,7 @@ final class UsersModule extends AbstractModule
     public function getUserByLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getUserByLocation', $pathParams, $query, $body, $headers);
@@ -193,7 +193,7 @@ final class UsersModule extends AbstractModule
     public function createUser(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createUser', $pathParams, $query, $body, $headers);

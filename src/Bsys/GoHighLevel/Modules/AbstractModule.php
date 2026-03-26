@@ -10,9 +10,11 @@ use InvalidArgumentException;
 
 abstract class AbstractModule
 {
-    public function __construct(
-        protected readonly CurlHttpClient $httpClient
-    ) {
+    protected CurlHttpClient $httpClient;
+
+    public function __construct(CurlHttpClient $httpClient)
+    {
+        $this->httpClient = $httpClient;
     }
 
     /**
@@ -38,7 +40,7 @@ abstract class AbstractModule
         string $key,
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         $definition = static::definitions()[$key] ?? null;
@@ -67,7 +69,7 @@ abstract class AbstractModule
         string $pathTemplate,
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         $path = $this->interpolatePath($pathTemplate, $pathParams);

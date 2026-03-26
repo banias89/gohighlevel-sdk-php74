@@ -37,7 +37,7 @@ final class CampaignsModule extends AbstractModule
     public function getCampaigns(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCampaigns', $pathParams, $query, $body, $headers);

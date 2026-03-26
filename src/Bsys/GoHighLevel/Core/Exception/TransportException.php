@@ -8,10 +8,13 @@ use RuntimeException;
 
 final class TransportException extends RuntimeException
 {
+    private int $curlErrorCode;
+
     public function __construct(
-        private readonly int $curlErrorCode,
+        int $curlErrorCode,
         string $message
     ) {
+        $this->curlErrorCode = $curlErrorCode;
         parent::__construct($message, $curlErrorCode);
     }
 

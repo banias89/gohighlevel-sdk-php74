@@ -1,4 +1,4 @@
-# Bsys GoHighLevel SDK (PHP 8.4)
+# Bsys GoHighLevel SDK (PHP 7.4 Compatible)
 
 SDK proprietario, modulare e senza dipendenze esterne per GoHighLevel API v2, focalizzato su **Private Integration Token / Access Token in header**.
 
@@ -75,11 +75,12 @@ require_once __DIR__ . '/autoload.php';
 use Bsys\GoHighLevel\Core\GhlClient;
 
 $client = GhlClient::withAccessToken(
-    accessToken: 'YOUR_PRIVATE_INTEGRATION_TOKEN'
+    'YOUR_PRIVATE_INTEGRATION_TOKEN'
 );
 
 $response = $client->contacts()->getContacts(
-    query: [
+    [],
+    [
         'locationId' => 'YOUR_LOCATION_ID',
         'limit' => 20,
     ]
@@ -100,7 +101,7 @@ var_dump($response->statusCode, $response->body);
 
 ```php
 $response = $client->contacts()->getContact(
-    pathParams: ['contactId' => 'abc123']
+    ['contactId' => 'abc123']
 );
 ```
 
@@ -110,9 +111,14 @@ $response = $client->contacts()->getContact(
 
 ```php
 $client = GhlClient::withAccessToken(
-    accessToken: 'YOUR_API_KEY',
-    authHeaderName: 'X-API-Key',
-    authScheme: null // invia il token senza prefisso "Bearer"
+    'YOUR_API_KEY',
+    'https://services.leadconnectorhq.com',
+    '2021-07-28',
+    30,
+    10,
+    'Bsys-GoHighLevel-SDK/1.0.0',
+    'X-API-Key',
+    null // invia il token senza prefisso "Bearer"
 );
 ```
 

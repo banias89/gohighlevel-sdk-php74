@@ -55,7 +55,7 @@ final class ProposalsModule extends AbstractModule
     public function listDocumentsContracts(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listDocumentsContracts', $pathParams, $query, $body, $headers);
@@ -75,7 +75,7 @@ final class ProposalsModule extends AbstractModule
     public function sendDocumentsContracts(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('sendDocumentsContracts', $pathParams, $query, $body, $headers);
@@ -95,7 +95,7 @@ final class ProposalsModule extends AbstractModule
     public function listDocumentsContractsTemplates(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listDocumentsContractsTemplates', $pathParams, $query, $body, $headers);
@@ -115,7 +115,7 @@ final class ProposalsModule extends AbstractModule
     public function sendDocumentsContractsTemplate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('sendDocumentsContractsTemplate', $pathParams, $query, $body, $headers);

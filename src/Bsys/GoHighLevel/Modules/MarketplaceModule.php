@@ -73,7 +73,7 @@ final class MarketplaceModule extends AbstractModule
     public function charge(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('charge', $pathParams, $query, $body, $headers);
@@ -93,7 +93,7 @@ final class MarketplaceModule extends AbstractModule
     public function getcharges(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getcharges', $pathParams, $query, $body, $headers);
@@ -113,7 +113,7 @@ final class MarketplaceModule extends AbstractModule
     public function deletecharge(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deletecharge', $pathParams, $query, $body, $headers);
@@ -133,7 +133,7 @@ final class MarketplaceModule extends AbstractModule
     public function getspecificcharge(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getspecificcharge', $pathParams, $query, $body, $headers);
@@ -153,7 +153,7 @@ final class MarketplaceModule extends AbstractModule
     public function hasfunds(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('hasfunds', $pathParams, $query, $body, $headers);
@@ -173,7 +173,7 @@ final class MarketplaceModule extends AbstractModule
     public function uninstallApplication(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('uninstallApplication', $pathParams, $query, $body, $headers);
@@ -193,7 +193,7 @@ final class MarketplaceModule extends AbstractModule
     public function getInstallerDetails(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getInstallerDetails', $pathParams, $query, $body, $headers);

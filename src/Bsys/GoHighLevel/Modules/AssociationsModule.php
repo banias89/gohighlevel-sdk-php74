@@ -91,7 +91,7 @@ final class AssociationsModule extends AbstractModule
     public function createRelation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createRelation', $pathParams, $query, $body, $headers);
@@ -111,7 +111,7 @@ final class AssociationsModule extends AbstractModule
     public function getRelationsByRecordId(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getRelationsByRecordId', $pathParams, $query, $body, $headers);
@@ -131,7 +131,7 @@ final class AssociationsModule extends AbstractModule
     public function deleteRelation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteRelation', $pathParams, $query, $body, $headers);
@@ -151,7 +151,7 @@ final class AssociationsModule extends AbstractModule
     public function getAssociationKeyByKeyName(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAssociationKeyByKeyName', $pathParams, $query, $body, $headers);
@@ -171,7 +171,7 @@ final class AssociationsModule extends AbstractModule
     public function getAssociationByObjectKeys(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAssociationByObjectKeys', $pathParams, $query, $body, $headers);
@@ -191,7 +191,7 @@ final class AssociationsModule extends AbstractModule
     public function updateAssociation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateAssociation', $pathParams, $query, $body, $headers);
@@ -211,7 +211,7 @@ final class AssociationsModule extends AbstractModule
     public function deleteAssociation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteAssociation', $pathParams, $query, $body, $headers);
@@ -231,7 +231,7 @@ final class AssociationsModule extends AbstractModule
     public function getAssociationById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAssociationById', $pathParams, $query, $body, $headers);
@@ -251,7 +251,7 @@ final class AssociationsModule extends AbstractModule
     public function createAssociation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createAssociation', $pathParams, $query, $body, $headers);
@@ -271,7 +271,7 @@ final class AssociationsModule extends AbstractModule
     public function findAssociations(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('findAssociations', $pathParams, $query, $body, $headers);

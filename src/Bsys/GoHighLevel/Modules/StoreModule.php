@@ -139,7 +139,7 @@ final class StoreModule extends AbstractModule
     public function createShippingZone(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createShippingZone', $pathParams, $query, $body, $headers);
@@ -159,7 +159,7 @@ final class StoreModule extends AbstractModule
     public function listShippingZones(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listShippingZones', $pathParams, $query, $body, $headers);
@@ -179,7 +179,7 @@ final class StoreModule extends AbstractModule
     public function getShippingZones(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getShippingZones', $pathParams, $query, $body, $headers);
@@ -199,7 +199,7 @@ final class StoreModule extends AbstractModule
     public function updateShippingZone(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateShippingZone', $pathParams, $query, $body, $headers);
@@ -219,7 +219,7 @@ final class StoreModule extends AbstractModule
     public function deleteShippingZone(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteShippingZone', $pathParams, $query, $body, $headers);
@@ -239,7 +239,7 @@ final class StoreModule extends AbstractModule
     public function getAvailableShippingZones(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAvailableShippingZones', $pathParams, $query, $body, $headers);
@@ -259,7 +259,7 @@ final class StoreModule extends AbstractModule
     public function createShippingRate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createShippingRate', $pathParams, $query, $body, $headers);
@@ -279,7 +279,7 @@ final class StoreModule extends AbstractModule
     public function listShippingRates(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listShippingRates', $pathParams, $query, $body, $headers);
@@ -299,7 +299,7 @@ final class StoreModule extends AbstractModule
     public function getShippingRates(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getShippingRates', $pathParams, $query, $body, $headers);
@@ -319,7 +319,7 @@ final class StoreModule extends AbstractModule
     public function updateShippingRate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateShippingRate', $pathParams, $query, $body, $headers);
@@ -339,7 +339,7 @@ final class StoreModule extends AbstractModule
     public function deleteShippingRate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteShippingRate', $pathParams, $query, $body, $headers);
@@ -359,7 +359,7 @@ final class StoreModule extends AbstractModule
     public function createShippingCarrier(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createShippingCarrier', $pathParams, $query, $body, $headers);
@@ -379,7 +379,7 @@ final class StoreModule extends AbstractModule
     public function listShippingCarriers(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listShippingCarriers', $pathParams, $query, $body, $headers);
@@ -399,7 +399,7 @@ final class StoreModule extends AbstractModule
     public function getShippingCarriers(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getShippingCarriers', $pathParams, $query, $body, $headers);
@@ -419,7 +419,7 @@ final class StoreModule extends AbstractModule
     public function updateShippingCarrier(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateShippingCarrier', $pathParams, $query, $body, $headers);
@@ -439,7 +439,7 @@ final class StoreModule extends AbstractModule
     public function deleteShippingCarrier(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteShippingCarrier', $pathParams, $query, $body, $headers);
@@ -459,7 +459,7 @@ final class StoreModule extends AbstractModule
     public function createStoreSetting(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createStoreSetting', $pathParams, $query, $body, $headers);
@@ -479,7 +479,7 @@ final class StoreModule extends AbstractModule
     public function getStoreSettings(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getStoreSettings', $pathParams, $query, $body, $headers);

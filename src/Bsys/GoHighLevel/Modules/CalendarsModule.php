@@ -235,7 +235,7 @@ final class CalendarsModule extends AbstractModule
     public function getGroups(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getGroups', $pathParams, $query, $body, $headers);
@@ -255,7 +255,7 @@ final class CalendarsModule extends AbstractModule
     public function createCalendarGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCalendarGroup', $pathParams, $query, $body, $headers);
@@ -275,7 +275,7 @@ final class CalendarsModule extends AbstractModule
     public function validateGroupsSlug(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('validateGroupsSlug', $pathParams, $query, $body, $headers);
@@ -295,7 +295,7 @@ final class CalendarsModule extends AbstractModule
     public function deleteGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteGroup', $pathParams, $query, $body, $headers);
@@ -315,7 +315,7 @@ final class CalendarsModule extends AbstractModule
     public function editGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('editGroup', $pathParams, $query, $body, $headers);
@@ -335,7 +335,7 @@ final class CalendarsModule extends AbstractModule
     public function disableGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('disableGroup', $pathParams, $query, $body, $headers);
@@ -355,7 +355,7 @@ final class CalendarsModule extends AbstractModule
     public function createAppointment(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createAppointment', $pathParams, $query, $body, $headers);
@@ -375,7 +375,7 @@ final class CalendarsModule extends AbstractModule
     public function editAppointment(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('editAppointment', $pathParams, $query, $body, $headers);
@@ -395,7 +395,7 @@ final class CalendarsModule extends AbstractModule
     public function getAppointment(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAppointment', $pathParams, $query, $body, $headers);
@@ -415,7 +415,7 @@ final class CalendarsModule extends AbstractModule
     public function getCalendarEvents(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCalendarEvents', $pathParams, $query, $body, $headers);
@@ -435,7 +435,7 @@ final class CalendarsModule extends AbstractModule
     public function getBlockedSlots(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getBlockedSlots', $pathParams, $query, $body, $headers);
@@ -455,7 +455,7 @@ final class CalendarsModule extends AbstractModule
     public function createBlockSlot(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createBlockSlot', $pathParams, $query, $body, $headers);
@@ -475,7 +475,7 @@ final class CalendarsModule extends AbstractModule
     public function editBlockSlot(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('editBlockSlot', $pathParams, $query, $body, $headers);
@@ -495,7 +495,7 @@ final class CalendarsModule extends AbstractModule
     public function getSlots(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSlots', $pathParams, $query, $body, $headers);
@@ -515,7 +515,7 @@ final class CalendarsModule extends AbstractModule
     public function updateCalendar(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCalendar', $pathParams, $query, $body, $headers);
@@ -535,7 +535,7 @@ final class CalendarsModule extends AbstractModule
     public function getCalendar(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCalendar', $pathParams, $query, $body, $headers);
@@ -555,7 +555,7 @@ final class CalendarsModule extends AbstractModule
     public function deleteCalendar(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCalendar', $pathParams, $query, $body, $headers);
@@ -575,7 +575,7 @@ final class CalendarsModule extends AbstractModule
     public function deleteEvent(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteEvent', $pathParams, $query, $body, $headers);
@@ -595,7 +595,7 @@ final class CalendarsModule extends AbstractModule
     public function getAppointmentNotes(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAppointmentNotes', $pathParams, $query, $body, $headers);
@@ -615,7 +615,7 @@ final class CalendarsModule extends AbstractModule
     public function createAppointmentNote(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createAppointmentNote', $pathParams, $query, $body, $headers);
@@ -635,7 +635,7 @@ final class CalendarsModule extends AbstractModule
     public function updateAppointmentNote(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateAppointmentNote', $pathParams, $query, $body, $headers);
@@ -655,7 +655,7 @@ final class CalendarsModule extends AbstractModule
     public function deleteAppointmentNote(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteAppointmentNote', $pathParams, $query, $body, $headers);
@@ -675,7 +675,7 @@ final class CalendarsModule extends AbstractModule
     public function getCalendarResource(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCalendarResource', $pathParams, $query, $body, $headers);
@@ -695,7 +695,7 @@ final class CalendarsModule extends AbstractModule
     public function updateCalendarResource(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCalendarResource', $pathParams, $query, $body, $headers);
@@ -715,7 +715,7 @@ final class CalendarsModule extends AbstractModule
     public function deleteCalendarResource(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCalendarResource', $pathParams, $query, $body, $headers);
@@ -735,7 +735,7 @@ final class CalendarsModule extends AbstractModule
     public function fetchCalendarResources(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('fetchCalendarResources', $pathParams, $query, $body, $headers);
@@ -755,7 +755,7 @@ final class CalendarsModule extends AbstractModule
     public function createCalendarResource(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCalendarResource', $pathParams, $query, $body, $headers);
@@ -775,7 +775,7 @@ final class CalendarsModule extends AbstractModule
     public function getEventNotification(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getEventNotification', $pathParams, $query, $body, $headers);
@@ -795,7 +795,7 @@ final class CalendarsModule extends AbstractModule
     public function createEventNotification(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createEventNotification', $pathParams, $query, $body, $headers);
@@ -815,7 +815,7 @@ final class CalendarsModule extends AbstractModule
     public function findEventNotification(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('findEventNotification', $pathParams, $query, $body, $headers);
@@ -835,7 +835,7 @@ final class CalendarsModule extends AbstractModule
     public function updateEventNotification(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateEventNotification', $pathParams, $query, $body, $headers);
@@ -855,7 +855,7 @@ final class CalendarsModule extends AbstractModule
     public function deleteEventNotification(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteEventNotification', $pathParams, $query, $body, $headers);
@@ -875,7 +875,7 @@ final class CalendarsModule extends AbstractModule
     public function getCalendars(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCalendars', $pathParams, $query, $body, $headers);
@@ -895,7 +895,7 @@ final class CalendarsModule extends AbstractModule
     public function createCalendar(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCalendar', $pathParams, $query, $body, $headers);
