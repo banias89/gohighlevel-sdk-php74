@@ -1,0 +1,16 @@
+{
+  "name": "bsys/gohighlevel-sdk-php74",
+  "description": "Custom GoHighLevel V2 SDK for Private Integration tokens (no OAuth flow)",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bsys\\": "src/Bsys/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
