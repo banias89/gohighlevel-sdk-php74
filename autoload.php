@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 spl_autoload_register(static function (string $class): void {
     $prefix = 'Bsys\\';
-    if (!str_starts_with($class, $prefix)) {
+    if (strpos($class, $prefix) !== 0) {
         return;
     }
 
