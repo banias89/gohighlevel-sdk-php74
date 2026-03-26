@@ -79,7 +79,7 @@ final class CustomFieldsModule extends AbstractModule
     public function getCustomFieldById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomFieldById', $pathParams, $query, $body, $headers);
@@ -99,7 +99,7 @@ final class CustomFieldsModule extends AbstractModule
     public function updateCustomField(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCustomField', $pathParams, $query, $body, $headers);
@@ -119,7 +119,7 @@ final class CustomFieldsModule extends AbstractModule
     public function deleteCustomField(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCustomField', $pathParams, $query, $body, $headers);
@@ -139,7 +139,7 @@ final class CustomFieldsModule extends AbstractModule
     public function getCustomFieldsByObjectKey(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomFieldsByObjectKey', $pathParams, $query, $body, $headers);
@@ -159,7 +159,7 @@ final class CustomFieldsModule extends AbstractModule
     public function createCustomFieldFolder(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCustomFieldFolder', $pathParams, $query, $body, $headers);
@@ -179,7 +179,7 @@ final class CustomFieldsModule extends AbstractModule
     public function updateCustomFieldFolder(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCustomFieldFolder', $pathParams, $query, $body, $headers);
@@ -199,7 +199,7 @@ final class CustomFieldsModule extends AbstractModule
     public function deleteCustomFieldFolder(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCustomFieldFolder', $pathParams, $query, $body, $headers);
@@ -219,7 +219,7 @@ final class CustomFieldsModule extends AbstractModule
     public function createCustomField(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCustomField', $pathParams, $query, $body, $headers);

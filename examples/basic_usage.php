@@ -9,14 +9,15 @@ use Bsys\GoHighLevel\Core\Exception\TransportException;
 use Bsys\GoHighLevel\Core\GhlClient;
 
 $client = GhlClient::withAccessToken(
-    accessToken: 'REPLACE_WITH_PRIVATE_INTEGRATION_TOKEN',
-    baseUrl: 'https://services.leadconnectorhq.com',
-    version: '2021-07-28'
+    'REPLACE_WITH_PRIVATE_INTEGRATION_TOKEN',
+    'https://services.leadconnectorhq.com',
+    '2021-07-28'
 );
 
 try {
     $response = $client->contacts()->getContacts(
-        query: [
+        [],
+        [
             'locationId' => 'REPLACE_LOCATION_ID',
             'limit' => 20,
         ]

@@ -43,7 +43,7 @@ final class PhoneSystemModule extends AbstractModule
     public function getnumberpoollist(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getnumberpoollist', $pathParams, $query, $body, $headers);
@@ -63,7 +63,7 @@ final class PhoneSystemModule extends AbstractModule
     public function activeNumbers(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('activeNumbers', $pathParams, $query, $body, $headers);

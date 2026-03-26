@@ -73,7 +73,7 @@ final class FunnelsModule extends AbstractModule
     public function createRedirect(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createRedirect', $pathParams, $query, $body, $headers);
@@ -93,7 +93,7 @@ final class FunnelsModule extends AbstractModule
     public function updateRedirectById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateRedirectById', $pathParams, $query, $body, $headers);
@@ -113,7 +113,7 @@ final class FunnelsModule extends AbstractModule
     public function deleteRedirectById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteRedirectById', $pathParams, $query, $body, $headers);
@@ -133,7 +133,7 @@ final class FunnelsModule extends AbstractModule
     public function fetchRedirectsList(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('fetchRedirectsList', $pathParams, $query, $body, $headers);
@@ -153,7 +153,7 @@ final class FunnelsModule extends AbstractModule
     public function getfunnels(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getfunnels', $pathParams, $query, $body, $headers);
@@ -173,7 +173,7 @@ final class FunnelsModule extends AbstractModule
     public function getpagesbyfunnelid(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getpagesbyfunnelid', $pathParams, $query, $body, $headers);
@@ -193,7 +193,7 @@ final class FunnelsModule extends AbstractModule
     public function getpagescountbyfunnelid(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getpagescountbyfunnelid', $pathParams, $query, $body, $headers);

@@ -193,7 +193,7 @@ final class ProductsModule extends AbstractModule
     public function bulkupdate(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkupdate', $pathParams, $query, $body, $headers);
@@ -213,7 +213,7 @@ final class ProductsModule extends AbstractModule
     public function bulkedit(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkedit', $pathParams, $query, $body, $headers);
@@ -233,7 +233,7 @@ final class ProductsModule extends AbstractModule
     public function createPriceForProduct(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createPriceForProduct', $pathParams, $query, $body, $headers);
@@ -253,7 +253,7 @@ final class ProductsModule extends AbstractModule
     public function listPricesForProduct(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listPricesForProduct', $pathParams, $query, $body, $headers);
@@ -273,7 +273,7 @@ final class ProductsModule extends AbstractModule
     public function getListInventory(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getListInventory', $pathParams, $query, $body, $headers);
@@ -293,7 +293,7 @@ final class ProductsModule extends AbstractModule
     public function updateInventory(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateInventory', $pathParams, $query, $body, $headers);
@@ -313,7 +313,7 @@ final class ProductsModule extends AbstractModule
     public function getPriceByIdForProduct(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getPriceByIdForProduct', $pathParams, $query, $body, $headers);
@@ -333,7 +333,7 @@ final class ProductsModule extends AbstractModule
     public function updatePriceByIdForProduct(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updatePriceByIdForProduct', $pathParams, $query, $body, $headers);
@@ -353,7 +353,7 @@ final class ProductsModule extends AbstractModule
     public function deletePriceByIdForProduct(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deletePriceByIdForProduct', $pathParams, $query, $body, $headers);
@@ -373,7 +373,7 @@ final class ProductsModule extends AbstractModule
     public function getProductStoreStats(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getProductStoreStats', $pathParams, $query, $body, $headers);
@@ -393,7 +393,7 @@ final class ProductsModule extends AbstractModule
     public function updateStoreStatus(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateStoreStatus', $pathParams, $query, $body, $headers);
@@ -413,7 +413,7 @@ final class ProductsModule extends AbstractModule
     public function updateDisplayPriority(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateDisplayPriority', $pathParams, $query, $body, $headers);
@@ -433,7 +433,7 @@ final class ProductsModule extends AbstractModule
     public function getProductCollection(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getProductCollection', $pathParams, $query, $body, $headers);
@@ -453,7 +453,7 @@ final class ProductsModule extends AbstractModule
     public function createProductCollection(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createProductCollection', $pathParams, $query, $body, $headers);
@@ -473,7 +473,7 @@ final class ProductsModule extends AbstractModule
     public function getProductCollectionId(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getProductCollectionId', $pathParams, $query, $body, $headers);
@@ -493,7 +493,7 @@ final class ProductsModule extends AbstractModule
     public function updateProductCollection(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateProductCollection', $pathParams, $query, $body, $headers);
@@ -513,7 +513,7 @@ final class ProductsModule extends AbstractModule
     public function deleteProductCollection(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteProductCollection', $pathParams, $query, $body, $headers);
@@ -533,7 +533,7 @@ final class ProductsModule extends AbstractModule
     public function getProductReviews(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getProductReviews', $pathParams, $query, $body, $headers);
@@ -553,7 +553,7 @@ final class ProductsModule extends AbstractModule
     public function getReviewsCount(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getReviewsCount', $pathParams, $query, $body, $headers);
@@ -573,7 +573,7 @@ final class ProductsModule extends AbstractModule
     public function updateProductReview(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateProductReview', $pathParams, $query, $body, $headers);
@@ -593,7 +593,7 @@ final class ProductsModule extends AbstractModule
     public function deleteProductReview(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteProductReview', $pathParams, $query, $body, $headers);
@@ -613,7 +613,7 @@ final class ProductsModule extends AbstractModule
     public function bulkUpdateProductReview(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkUpdateProductReview', $pathParams, $query, $body, $headers);
@@ -633,7 +633,7 @@ final class ProductsModule extends AbstractModule
     public function getProductById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getProductById', $pathParams, $query, $body, $headers);
@@ -653,7 +653,7 @@ final class ProductsModule extends AbstractModule
     public function deleteProductById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteProductById', $pathParams, $query, $body, $headers);
@@ -673,7 +673,7 @@ final class ProductsModule extends AbstractModule
     public function updateProductById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateProductById', $pathParams, $query, $body, $headers);
@@ -693,7 +693,7 @@ final class ProductsModule extends AbstractModule
     public function createProduct(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createProduct', $pathParams, $query, $body, $headers);
@@ -713,7 +713,7 @@ final class ProductsModule extends AbstractModule
     public function listInvoices(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listInvoices', $pathParams, $query, $body, $headers);

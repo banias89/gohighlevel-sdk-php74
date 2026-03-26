@@ -271,7 +271,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startGoogleOauth(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startGoogleOauth', $pathParams, $query, $body, $headers);
@@ -291,7 +291,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getGoogleLocations(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getGoogleLocations', $pathParams, $query, $body, $headers);
@@ -311,7 +311,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function setGoogleLocations(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('setGoogleLocations', $pathParams, $query, $body, $headers);
@@ -331,7 +331,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getPosts(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getPosts', $pathParams, $query, $body, $headers);
@@ -351,7 +351,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function createPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createPost', $pathParams, $query, $body, $headers);
@@ -371,7 +371,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getPost', $pathParams, $query, $body, $headers);
@@ -391,7 +391,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function editPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('editPost', $pathParams, $query, $body, $headers);
@@ -411,7 +411,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function deletePost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deletePost', $pathParams, $query, $body, $headers);
@@ -431,7 +431,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function bulkDeleteSocialPlannerPosts(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('bulkDeleteSocialPlannerPosts', $pathParams, $query, $body, $headers);
@@ -451,7 +451,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getAccount(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAccount', $pathParams, $query, $body, $headers);
@@ -471,7 +471,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function deleteAccount(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteAccount', $pathParams, $query, $body, $headers);
@@ -491,7 +491,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startFacebookOauth(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startFacebookOauth', $pathParams, $query, $body, $headers);
@@ -511,7 +511,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getFacebookPageGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getFacebookPageGroup', $pathParams, $query, $body, $headers);
@@ -531,7 +531,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function attachFacebookPageGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('attachFacebookPageGroup', $pathParams, $query, $body, $headers);
@@ -551,7 +551,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startInstagramOauth(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startInstagramOauth', $pathParams, $query, $body, $headers);
@@ -571,7 +571,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getInstagramPageGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getInstagramPageGroup', $pathParams, $query, $body, $headers);
@@ -591,7 +591,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function attachInstagramPageGroup(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('attachInstagramPageGroup', $pathParams, $query, $body, $headers);
@@ -611,7 +611,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startLinkedinOauth(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startLinkedinOauth', $pathParams, $query, $body, $headers);
@@ -631,7 +631,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getLinkedinPageProfile(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLinkedinPageProfile', $pathParams, $query, $body, $headers);
@@ -651,7 +651,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function attachLinkedinPageProfile(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('attachLinkedinPageProfile', $pathParams, $query, $body, $headers);
@@ -671,7 +671,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startTwitterOauth(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startTwitterOauth', $pathParams, $query, $body, $headers);
@@ -691,7 +691,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getTwitterProfile(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTwitterProfile', $pathParams, $query, $body, $headers);
@@ -711,7 +711,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function attachTwitterProfile(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('attachTwitterProfile', $pathParams, $query, $body, $headers);
@@ -731,7 +731,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function uploadCsv(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('uploadCsv', $pathParams, $query, $body, $headers);
@@ -751,7 +751,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getUploadStatus(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getUploadStatus', $pathParams, $query, $body, $headers);
@@ -771,7 +771,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function setAccounts(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('setAccounts', $pathParams, $query, $body, $headers);
@@ -791,7 +791,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getCsvPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCsvPost', $pathParams, $query, $body, $headers);
@@ -811,7 +811,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startCsvFinalize(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startCsvFinalize', $pathParams, $query, $body, $headers);
@@ -831,7 +831,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function deleteCsv(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCsv', $pathParams, $query, $body, $headers);
@@ -851,7 +851,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function deleteCsvPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCsvPost', $pathParams, $query, $body, $headers);
@@ -871,7 +871,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startTiktokOauth(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startTiktokOauth', $pathParams, $query, $body, $headers);
@@ -891,7 +891,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getTiktokProfile(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTiktokProfile', $pathParams, $query, $body, $headers);
@@ -911,7 +911,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function attachTiktokProfile(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('attachTiktokProfile', $pathParams, $query, $body, $headers);
@@ -931,7 +931,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function startTiktokBusinessOauth(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('startTiktokBusinessOauth', $pathParams, $query, $body, $headers);
@@ -951,7 +951,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getTiktokBusinessProfile(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTiktokBusinessProfile', $pathParams, $query, $body, $headers);
@@ -971,7 +971,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getCategoriesLocationId(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCategoriesLocationId', $pathParams, $query, $body, $headers);
@@ -991,7 +991,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getCategoriesId(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCategoriesId', $pathParams, $query, $body, $headers);
@@ -1011,7 +1011,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getTagsLocationId(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTagsLocationId', $pathParams, $query, $body, $headers);
@@ -1031,7 +1031,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getTagsByIds(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTagsByIds', $pathParams, $query, $body, $headers);
@@ -1051,7 +1051,7 @@ final class SocialMediaPostingModule extends AbstractModule
     public function getSocialMediaStatistics(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSocialMediaStatistics', $pathParams, $query, $body, $headers);

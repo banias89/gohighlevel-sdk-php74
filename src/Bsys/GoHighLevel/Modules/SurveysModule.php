@@ -43,7 +43,7 @@ final class SurveysModule extends AbstractModule
     public function getSurveysSubmissions(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSurveysSubmissions', $pathParams, $query, $body, $headers);
@@ -63,7 +63,7 @@ final class SurveysModule extends AbstractModule
     public function getSurveys(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSurveys', $pathParams, $query, $body, $headers);

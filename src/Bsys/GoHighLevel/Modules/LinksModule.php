@@ -67,7 +67,7 @@ final class LinksModule extends AbstractModule
     public function getLinkById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLinkById', $pathParams, $query, $body, $headers);
@@ -87,7 +87,7 @@ final class LinksModule extends AbstractModule
     public function updateLink(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateLink', $pathParams, $query, $body, $headers);
@@ -107,7 +107,7 @@ final class LinksModule extends AbstractModule
     public function deleteLink(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteLink', $pathParams, $query, $body, $headers);
@@ -127,7 +127,7 @@ final class LinksModule extends AbstractModule
     public function searchTriggerLinks(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('searchTriggerLinks', $pathParams, $query, $body, $headers);
@@ -147,7 +147,7 @@ final class LinksModule extends AbstractModule
     public function getLinks(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLinks', $pathParams, $query, $body, $headers);
@@ -167,7 +167,7 @@ final class LinksModule extends AbstractModule
     public function createLink(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createLink', $pathParams, $query, $body, $headers);

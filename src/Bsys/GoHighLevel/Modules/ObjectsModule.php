@@ -85,7 +85,7 @@ final class ObjectsModule extends AbstractModule
     public function getObjectSchemaByKey(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getObjectSchemaByKey', $pathParams, $query, $body, $headers);
@@ -105,7 +105,7 @@ final class ObjectsModule extends AbstractModule
     public function updateCustomObject(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCustomObject', $pathParams, $query, $body, $headers);
@@ -125,7 +125,7 @@ final class ObjectsModule extends AbstractModule
     public function getRecordById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getRecordById', $pathParams, $query, $body, $headers);
@@ -145,7 +145,7 @@ final class ObjectsModule extends AbstractModule
     public function updateObjectRecord(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateObjectRecord', $pathParams, $query, $body, $headers);
@@ -165,7 +165,7 @@ final class ObjectsModule extends AbstractModule
     public function deleteObjectRecord(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteObjectRecord', $pathParams, $query, $body, $headers);
@@ -185,7 +185,7 @@ final class ObjectsModule extends AbstractModule
     public function createObjectRecord(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createObjectRecord', $pathParams, $query, $body, $headers);
@@ -205,7 +205,7 @@ final class ObjectsModule extends AbstractModule
     public function searchObjectRecords(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('searchObjectRecords', $pathParams, $query, $body, $headers);
@@ -225,7 +225,7 @@ final class ObjectsModule extends AbstractModule
     public function getObjectByLocationId(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getObjectByLocationId', $pathParams, $query, $body, $headers);
@@ -245,7 +245,7 @@ final class ObjectsModule extends AbstractModule
     public function createCustomObjectSchema(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCustomObjectSchema', $pathParams, $query, $body, $headers);

@@ -223,7 +223,7 @@ final class ContactsModule extends AbstractModule
     public function searchContactsAdvanced(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('searchContactsAdvanced', $pathParams, $query, $body, $headers);
@@ -243,7 +243,7 @@ final class ContactsModule extends AbstractModule
     public function getDuplicateContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getDuplicateContact', $pathParams, $query, $body, $headers);
@@ -263,7 +263,7 @@ final class ContactsModule extends AbstractModule
     public function getAllTasks(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAllTasks', $pathParams, $query, $body, $headers);
@@ -283,7 +283,7 @@ final class ContactsModule extends AbstractModule
     public function createTask(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createTask', $pathParams, $query, $body, $headers);
@@ -303,7 +303,7 @@ final class ContactsModule extends AbstractModule
     public function getTask(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTask', $pathParams, $query, $body, $headers);
@@ -323,7 +323,7 @@ final class ContactsModule extends AbstractModule
     public function updateTask(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateTask', $pathParams, $query, $body, $headers);
@@ -343,7 +343,7 @@ final class ContactsModule extends AbstractModule
     public function deleteTask(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteTask', $pathParams, $query, $body, $headers);
@@ -363,7 +363,7 @@ final class ContactsModule extends AbstractModule
     public function updateTaskCompleted(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateTaskCompleted', $pathParams, $query, $body, $headers);
@@ -383,7 +383,7 @@ final class ContactsModule extends AbstractModule
     public function getAppointmentsForContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAppointmentsForContact', $pathParams, $query, $body, $headers);
@@ -403,7 +403,7 @@ final class ContactsModule extends AbstractModule
     public function addTags(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addTags', $pathParams, $query, $body, $headers);
@@ -423,7 +423,7 @@ final class ContactsModule extends AbstractModule
     public function removeTags(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('removeTags', $pathParams, $query, $body, $headers);
@@ -443,7 +443,7 @@ final class ContactsModule extends AbstractModule
     public function getAllNotes(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAllNotes', $pathParams, $query, $body, $headers);
@@ -463,7 +463,7 @@ final class ContactsModule extends AbstractModule
     public function createNote(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createNote', $pathParams, $query, $body, $headers);
@@ -483,7 +483,7 @@ final class ContactsModule extends AbstractModule
     public function getNote(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getNote', $pathParams, $query, $body, $headers);
@@ -503,7 +503,7 @@ final class ContactsModule extends AbstractModule
     public function updateNote(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateNote', $pathParams, $query, $body, $headers);
@@ -523,7 +523,7 @@ final class ContactsModule extends AbstractModule
     public function deleteNote(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteNote', $pathParams, $query, $body, $headers);
@@ -543,7 +543,7 @@ final class ContactsModule extends AbstractModule
     public function createAssociation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createAssociation', $pathParams, $query, $body, $headers);
@@ -563,7 +563,7 @@ final class ContactsModule extends AbstractModule
     public function addRemoveContactFromBusiness(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addRemoveContactFromBusiness', $pathParams, $query, $body, $headers);
@@ -583,7 +583,7 @@ final class ContactsModule extends AbstractModule
     public function getContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getContact', $pathParams, $query, $body, $headers);
@@ -603,7 +603,7 @@ final class ContactsModule extends AbstractModule
     public function updateContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateContact', $pathParams, $query, $body, $headers);
@@ -623,7 +623,7 @@ final class ContactsModule extends AbstractModule
     public function deleteContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteContact', $pathParams, $query, $body, $headers);
@@ -643,7 +643,7 @@ final class ContactsModule extends AbstractModule
     public function upsertContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('upsertContact', $pathParams, $query, $body, $headers);
@@ -663,7 +663,7 @@ final class ContactsModule extends AbstractModule
     public function getContactsByBusinessid(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getContactsByBusinessid', $pathParams, $query, $body, $headers);
@@ -683,7 +683,7 @@ final class ContactsModule extends AbstractModule
     public function addFollowersContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addFollowersContact', $pathParams, $query, $body, $headers);
@@ -703,7 +703,7 @@ final class ContactsModule extends AbstractModule
     public function removeFollowersContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('removeFollowersContact', $pathParams, $query, $body, $headers);
@@ -723,7 +723,7 @@ final class ContactsModule extends AbstractModule
     public function addContactToCampaign(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addContactToCampaign', $pathParams, $query, $body, $headers);
@@ -743,7 +743,7 @@ final class ContactsModule extends AbstractModule
     public function removeContactFromCampaign(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('removeContactFromCampaign', $pathParams, $query, $body, $headers);
@@ -763,7 +763,7 @@ final class ContactsModule extends AbstractModule
     public function removeContactFromEveryCampaign(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('removeContactFromEveryCampaign', $pathParams, $query, $body, $headers);
@@ -783,7 +783,7 @@ final class ContactsModule extends AbstractModule
     public function addContactToWorkflow(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('addContactToWorkflow', $pathParams, $query, $body, $headers);
@@ -803,7 +803,7 @@ final class ContactsModule extends AbstractModule
     public function deleteContactFromWorkflow(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteContactFromWorkflow', $pathParams, $query, $body, $headers);
@@ -823,7 +823,7 @@ final class ContactsModule extends AbstractModule
     public function createContact(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createContact', $pathParams, $query, $body, $headers);
@@ -843,7 +843,7 @@ final class ContactsModule extends AbstractModule
     public function getContacts(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getContacts', $pathParams, $query, $body, $headers);

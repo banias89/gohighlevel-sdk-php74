@@ -37,7 +37,7 @@ final class CompaniesModule extends AbstractModule
     public function getCompany(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCompany', $pathParams, $query, $body, $headers);

@@ -55,7 +55,7 @@ final class SnapshotsModule extends AbstractModule
     public function getCustomSnapshots(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCustomSnapshots', $pathParams, $query, $body, $headers);
@@ -75,7 +75,7 @@ final class SnapshotsModule extends AbstractModule
     public function createSnapshotShareLink(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createSnapshotShareLink', $pathParams, $query, $body, $headers);
@@ -95,7 +95,7 @@ final class SnapshotsModule extends AbstractModule
     public function getSnapshotPush(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSnapshotPush', $pathParams, $query, $body, $headers);
@@ -115,7 +115,7 @@ final class SnapshotsModule extends AbstractModule
     public function getLatestSnapshotPush(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getLatestSnapshotPush', $pathParams, $query, $body, $headers);

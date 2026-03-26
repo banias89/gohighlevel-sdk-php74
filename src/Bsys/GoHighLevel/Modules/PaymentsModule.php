@@ -175,7 +175,7 @@ final class PaymentsModule extends AbstractModule
     public function createIntegrationProvider(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createIntegrationProvider', $pathParams, $query, $body, $headers);
@@ -195,7 +195,7 @@ final class PaymentsModule extends AbstractModule
     public function listIntegrationProviders(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listIntegrationProviders', $pathParams, $query, $body, $headers);
@@ -215,7 +215,7 @@ final class PaymentsModule extends AbstractModule
     public function listOrders(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listOrders', $pathParams, $query, $body, $headers);
@@ -235,7 +235,7 @@ final class PaymentsModule extends AbstractModule
     public function getOrderById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getOrderById', $pathParams, $query, $body, $headers);
@@ -255,7 +255,7 @@ final class PaymentsModule extends AbstractModule
     public function recordOrderPayment(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('recordOrderPayment', $pathParams, $query, $body, $headers);
@@ -275,7 +275,7 @@ final class PaymentsModule extends AbstractModule
     public function postMigrateOrderPaymentStatus(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('postMigrateOrderPaymentStatus', $pathParams, $query, $body, $headers);
@@ -295,7 +295,7 @@ final class PaymentsModule extends AbstractModule
     public function createOrderFulfillment(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createOrderFulfillment', $pathParams, $query, $body, $headers);
@@ -315,7 +315,7 @@ final class PaymentsModule extends AbstractModule
     public function listOrderFulfillment(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listOrderFulfillment', $pathParams, $query, $body, $headers);
@@ -335,7 +335,7 @@ final class PaymentsModule extends AbstractModule
     public function listOrderNotes(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listOrderNotes', $pathParams, $query, $body, $headers);
@@ -355,7 +355,7 @@ final class PaymentsModule extends AbstractModule
     public function listTransactions(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listTransactions', $pathParams, $query, $body, $headers);
@@ -375,7 +375,7 @@ final class PaymentsModule extends AbstractModule
     public function getTransactionById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getTransactionById', $pathParams, $query, $body, $headers);
@@ -395,7 +395,7 @@ final class PaymentsModule extends AbstractModule
     public function listSubscriptions(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listSubscriptions', $pathParams, $query, $body, $headers);
@@ -415,7 +415,7 @@ final class PaymentsModule extends AbstractModule
     public function getSubscriptionById(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getSubscriptionById', $pathParams, $query, $body, $headers);
@@ -435,7 +435,7 @@ final class PaymentsModule extends AbstractModule
     public function listCoupons(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('listCoupons', $pathParams, $query, $body, $headers);
@@ -455,7 +455,7 @@ final class PaymentsModule extends AbstractModule
     public function createCoupon(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createCoupon', $pathParams, $query, $body, $headers);
@@ -475,7 +475,7 @@ final class PaymentsModule extends AbstractModule
     public function updateCoupon(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateCoupon', $pathParams, $query, $body, $headers);
@@ -495,7 +495,7 @@ final class PaymentsModule extends AbstractModule
     public function deleteCoupon(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteCoupon', $pathParams, $query, $body, $headers);
@@ -515,7 +515,7 @@ final class PaymentsModule extends AbstractModule
     public function getCoupon(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getCoupon', $pathParams, $query, $body, $headers);
@@ -535,7 +535,7 @@ final class PaymentsModule extends AbstractModule
     public function createIntegration(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createIntegration', $pathParams, $query, $body, $headers);
@@ -555,7 +555,7 @@ final class PaymentsModule extends AbstractModule
     public function deleteIntegration(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('deleteIntegration', $pathParams, $query, $body, $headers);
@@ -575,7 +575,7 @@ final class PaymentsModule extends AbstractModule
     public function fetchConfig(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('fetchConfig', $pathParams, $query, $body, $headers);
@@ -595,7 +595,7 @@ final class PaymentsModule extends AbstractModule
     public function createConfig(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createConfig', $pathParams, $query, $body, $headers);
@@ -615,7 +615,7 @@ final class PaymentsModule extends AbstractModule
     public function disconnectConfig(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('disconnectConfig', $pathParams, $query, $body, $headers);
@@ -635,7 +635,7 @@ final class PaymentsModule extends AbstractModule
     public function customProviderMarketplaceAppUpdateCapabilities(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('customProviderMarketplaceAppUpdateCapabilities', $pathParams, $query, $body, $headers);

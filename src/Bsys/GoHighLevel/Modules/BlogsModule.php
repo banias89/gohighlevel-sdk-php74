@@ -73,7 +73,7 @@ final class BlogsModule extends AbstractModule
     public function checkUrlSlugExists(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('checkUrlSlugExists', $pathParams, $query, $body, $headers);
@@ -93,7 +93,7 @@ final class BlogsModule extends AbstractModule
     public function updateBlogPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('updateBlogPost', $pathParams, $query, $body, $headers);
@@ -113,7 +113,7 @@ final class BlogsModule extends AbstractModule
     public function createBlogPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('createBlogPost', $pathParams, $query, $body, $headers);
@@ -133,7 +133,7 @@ final class BlogsModule extends AbstractModule
     public function getAllBlogAuthorsByLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAllBlogAuthorsByLocation', $pathParams, $query, $body, $headers);
@@ -153,7 +153,7 @@ final class BlogsModule extends AbstractModule
     public function getAllCategoriesByLocation(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getAllCategoriesByLocation', $pathParams, $query, $body, $headers);
@@ -173,7 +173,7 @@ final class BlogsModule extends AbstractModule
     public function getBlogPost(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getBlogPost', $pathParams, $query, $body, $headers);
@@ -193,7 +193,7 @@ final class BlogsModule extends AbstractModule
     public function getBlogs(
         array $pathParams = [],
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->sendByKey('getBlogs', $pathParams, $query, $body, $headers);

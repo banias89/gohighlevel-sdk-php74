@@ -49,9 +49,11 @@ final class GhlClient
      */
     private array $moduleCache = [];
 
-    public function __construct(
-        private readonly CurlHttpClient $httpClient
-    ) {
+    private CurlHttpClient $httpClient;
+
+    public function __construct(CurlHttpClient $httpClient)
+    {
+        $this->httpClient = $httpClient;
     }
 
     public static function withAccessToken(
@@ -65,14 +67,14 @@ final class GhlClient
         ?string $authScheme = 'Bearer'
     ): self {
         return new self(new CurlHttpClient(
-            accessToken: $accessToken,
-            baseUrl: $baseUrl,
-            version: $version,
-            timeoutSeconds: $timeoutSeconds,
-            connectTimeoutSeconds: $connectTimeoutSeconds,
-            userAgent: $userAgent,
-            authHeaderName: $authHeaderName,
-            authScheme: $authScheme
+            $accessToken,
+            $baseUrl,
+            $version,
+            $timeoutSeconds,
+            $connectTimeoutSeconds,
+            $userAgent,
+            $authHeaderName,
+            $authScheme
         ));
     }
 
@@ -92,7 +94,7 @@ final class GhlClient
         string $method,
         string $path,
         array $query = [],
-        array|string|null $body = null,
+        $body = null,
         array $headers = []
     ): HttpResponse {
         return $this->httpClient->request($method, $path, $query, $body, $headers);
